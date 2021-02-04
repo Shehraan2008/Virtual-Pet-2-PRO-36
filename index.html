@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual Pet</title>
+    <!-- Libraires -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD60hXgXHgg7DK1Xuj7Mb0kE4swAwn2GL8",
+        authDomain: "virtual-pet-bfb31.firebaseapp.com",
+        databaseURL: "https://virtual-pet-bfb31-default-rtdb.firebaseio.com",
+        projectId: "virtual-pet-bfb31",
+        storageBucket: "virtual-pet-bfb31.appspot.com",
+        messagingSenderId: "752067872962",
+        appId: "1:752067872962:web:0fa23183fcff5b0681d35b",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Fonts and  Styling -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>🐩 My Virtual Pet 🐕</h1>
+    <hr />
+
+    <div id="menu">
+      <aside>
+        <h2>--Instructions--</h2>
+        <p>Press UP_ARROW to Feed</p>
+        <p>Press B to Buy more Food</p>
+        <p>Tap on him to play with him</p>
+        Enter your Name:<input type="text" name="name" id="name" value="Flip" />
+        <br /><br />
+        Enter your Dog's Name:
+        <input type="text" name="dogName" id="dogName" value="Peanut" />
+        <br /><br />
+        <button id="submit">click me !</button>
+      </aside>
+    </div>
+    <script src="sketch.js"></script>
+    <script src="js/food.js"></script>
+  </body>
+</html>

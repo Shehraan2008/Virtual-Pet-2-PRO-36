@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "VT323", monospace;
+  text-align: center;
+  background-color: rgb(59, 149, 246);
+}
+canvas {
+  border: 2px solid black;
+  margin-top: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: none;
+}
+h1 {
+  text-align: center;
+  font-size: 500%;
+  color: whitesmoke;
+  letter-spacing: 5px;
+}
+aside {
+  width: 30%;
+  padding-left: 0.5rem;
+  margin-left: auto;
+  float: left;
+  text-align: center;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  color: whitesmoke;
+  background-color: #ec84db;
+  border-radius: 10px;
+  font-size: larger;
+  height: 100%;
+}
